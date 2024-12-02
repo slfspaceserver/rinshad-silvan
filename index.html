@@ -145,6 +145,45 @@
 .tree li:nth-child(even) .node {
   background: #e6f7ff;
 }
+.container-unique {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 10px;
+  
+}
+
+.text-section-unique {
+  flex: 1;
+}
+
+.image-section-unique {
+  flex: 1;
+  text-align: center;
+}
+
+.image-unique {
+  max-width: 100%;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .container-unique {
+    flex-direction: column;
+    
+  }
+
+  .image-section-unique {
+    order: 2;
+  }
+
+  .text-section-unique {
+    order: 1;
+  }
+}
 
 </style>
 </head>
@@ -240,7 +279,11 @@
           <div class="col-xl-5 content">
             <h3>About </h3>
             <h2 style="color: #10058c;">Rinshad silvan</h2>
-            <p>A lifelong entrepreneur, I've been immersed in the Silvan Business Group since a young age. I've led the charge in driving growth and innovation, serving as the Director of Global Operations and Managing Director of Silvano Interiors.</p>
+            <p>Growing up immersed in the dynamic world of Silvan Business Group, Rinshad Silvan developed a deep-rooted passion for entrepreneurship. Balancing academic pursuits with entrepreneurial endeavors, he honed his skills and laid the foundation for a successful career.
+<br><br>
+              Today, as the Director of Global Operations, Rinshad is instrumental in driving the company's international expansion and optimizing operational efficiency. As the Managing Director of Silvano Interiors, he oversees the design, production, and installation of high-quality interior solutions.
+              <br> <br>
+              Rinshad's commitment to excellence and innovation has been instrumental in shaping Silvan Business Group into a leading industry player.</p>
             <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
@@ -326,6 +369,30 @@
           </div>
         </li>
       </ul>
+    </div>
+
+    <div class="container-unique">
+      <div class="text-section-unique">
+        <h1 class="title-unique">About Us - Silvan Business Group</h1>
+        <p class="paragraph-unique">
+          Silvan Business Group is a global enterprise committed to excellence, innovation, and delivering value across diverse industries. With a strong presence worldwide, we take pride in driving impactful operations across key markets.
+        </p>
+        <p class="paragraph-unique">
+          Currently, Silvan Business Group operates in:
+        </p>
+        <ul class="paragraph-unique">
+          <li><strong>China:</strong> Pioneering innovation in one of the world's largest economies.</li>
+          <li><strong>India:</strong> Expanding opportunities in a rapidly growing market.</li>
+          <li><strong>UAE:</strong> Delivering excellence at the heart of the Middle East.</li>
+          <li><strong>Bahrain:</strong> Strengthening regional partnerships and growth.</li>
+        </ul>
+        <p class="paragraph-unique">
+          At Silvan Business Group, we aim to create sustainable solutions, foster global collaborations, and contribute to the economic development of every region we serve. Join us as we continue our journey of global success!
+        </p>
+      </div>
+      <div class="image-section-unique">
+        <img src="assets/img/map.png" alt="Global Operations Map" class="image-unique">
+      </div>
     </div>
     <!-- Team Section -->
     <section id="products" class="team section">
