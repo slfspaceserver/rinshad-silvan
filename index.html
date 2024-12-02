@@ -66,18 +66,98 @@
             width: 80%; /* Each image takes up 80% of the container width */
           }
         }
+        .career-tree {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.career-tree h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.tree {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.tree::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+}
+
+.tree li {
+  margin: 20px 0;
+  position: relative;
+}
+
+.tree li .node {
+  display: inline-block;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tree li .node h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.tree li .node p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.tree li::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #4CAF50;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.tree li:nth-child(even) .node {
+  background: #e6f7ff;
+}
+
 </style>
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between" >
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class=" ">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Rinshad Silvan</h1>
+        <img src="assets/img/LOGO.png" alt="" style=" width: 140px; height: 70px;margin-left: 30px;"> 
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -103,7 +183,7 @@
     <section id="hero" class="hero section dark-background ">
       <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
 
-      <div class="container">
+      <div class="container" style="margin-top: 40px;">
         <div class="row gy-4 justify-content-between">
           <div class="col-lg-4 order-lg-last hero-img" >
             <img src="assets/img/rinshad.png" class="img-fluid animated" alt="" style="height: 400pxy;" >
@@ -206,6 +286,47 @@
       </div>
 
     </section><!-- /About Section -->
+    <div class="career-tree">
+      <h2>My Career Journey</h2>
+      <ul class="tree">
+        <li>
+          <div class="node">
+            <h3>Early Start</h3>
+            <p>I grew up in the family business and started my entrepreneurial journey early, balancing school with entrepreneurship.</p>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <h3>Post College</h3>
+            <p>Took the title of Silvan Business Group straight out of college and have been passionate about its growth ever since.</p>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <h3>School Contribution</h3>
+            <p>Even while in the School Session, I began to contribute to the growth and development of Silvan Business Group.</p>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <h3>Initial Focus</h3>
+            <p>Initially focused on social media and business development for the group.</p>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <h3>Current Role</h3>
+            <p>Now, I'm thrilled to be the Director of Global Operations at Silvan Business Group & Managing Director of Silvano Interiors.</p>
+          </div>
+        </li>
+        <li>
+          <div class="node">
+            <h3>Future Vision</h3>
+            <p>Bringing my experience and dedication to continue driving our family business forward.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
     <!-- Team Section -->
     <section id="products" class="team section">
 
@@ -655,8 +776,8 @@
                 <div class="member">
                   <div class="pic"><img src="assets/img/silvan/13.jpeg" class="img-fluid" alt=""></div>
                   <div class="member-info">
-                    <h4 style="color: #10058c;">Valanchery , Kanjippura</h4>
-                    <p>Kozhikode</p>
+                    <h4 style="color: #10058c;">Kanjippura</h4>
+                    <p>Valanchery </p>
                     
                   </div>
                 </div>
