@@ -66,85 +66,104 @@
             width: 80%; /* Each image takes up 80% of the container width */
           }
         }
+        
         .career-tree {
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
 
-.career-tree h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #555;
-}
+    .career-tree h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #444;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
 
-.tree {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
+    .tree {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
 
-.tree::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  height: 100%;
-  width: 2px;
-  background-color: #ccc;
-  transform: translateX(-50%);
-}
+    .tree::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      height: 100%;
+      width: 3px;
+      background-color: #ddd;
+      transform: translateX(-50%);
+    }
 
-.tree li {
-  margin: 20px 0;
-  position: relative;
-}
+    .tree li {
+      position: relative;
+      margin: 40px 0;
+      display: flex;
+      justify-content: center;
+    }
 
-.tree li .node {
-  display: inline-block;
-  padding: 20px;
-  background: #f1f1f1;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  text-align: left;
-}
+    .tree li::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      width: 14px;
+      height: 14px;
+      background: #4CAF50;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      z-index: 1;
+      transform: translateX(-50%);
+      margin-top: -30px;
+      
+    }
 
-.tree li .node h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #444;
-}
+    .node {
+      position: relative;
+      padding: 20px 30px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 180px;
+    }
 
-.tree li .node p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #666;
-}
+    .node:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
 
-.tree li::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  background: #4CAF50;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
+    .node h3 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      color: #333;
+    }
 
-.tree li:nth-child(even) .node {
-  background: #e6f7ff;
-}
+    .node p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .tree li:nth-child(even) .node {
+      background: #eef7fc;
+      border-left: 4px solid #2196F3;
+    }
+
+    .tree li:nth-child(odd) .node {
+      border-left: 4px solid #4CAF50;
+    }
+
+
 .container-unique {
   display: flex;
   flex-direction: row;
@@ -196,7 +215,7 @@
       <a href="index.html" class=" ">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <img src="assets/img/LOGO.png" alt="" style=" width: 200px; height: 80px;margin-left: 30px;"> 
+        <h2 style="margin-top: 18px; font-weight: bold;">Rinshad Silvan</h2>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -279,9 +298,9 @@
           <div class="col-xl-5 content">
             <h3>About </h3>
             <h2 style="color: #10058c;">Rinshad silvan</h2>
-            <p>Growing up immersed in the dynamic world of Silvan Business Group, Rinshad Silvan developed a deep-rooted passion for entrepreneurship. Balancing academic pursuits with entrepreneurial endeavors, he honed his skills and laid the foundation for a successful career.
+            <p>Growing up immersed in the dynamic world of Silvan Business Group, He developed a deep-rooted passion for entrepreneurship. Balancing academic pursuits with entrepreneurial endeavors, he honed his skills and laid the foundation for a successful career.
 <br><br>
-              Today, as the Director of Global Operations, Rinshad is instrumental in driving the company's international expansion and optimizing operational efficiency. As the Managing Director of Silvano Interiors, he oversees the design, production, and installation of high-quality interior solutions.
+              Today, as the Director of Global Operations, He is instrumental in driving the company's international expansion and optimizing operational efficiency. As the Managing Director of Silvano Interiors, he oversees the design, production, and installation of high-quality interior solutions.
               <br> <br>
               Rinshad's commitment to excellence and innovation has been instrumental in shaping Silvan Business Group into a leading industry player.</p>
             <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
@@ -334,42 +353,43 @@
       <ul class="tree">
         <li>
           <div class="node">
-            <h3>Early Start</h3>
-            <p>I grew up in the family business and started my entrepreneurial journey early, balancing school with entrepreneurship.</p>
+            <h3 style="margin-top: 20px;">Early Foundations</h3>
+            <p>Grew up immersed in the family business, building a strong understanding of entrepreneurship from a young age.</p>
           </div>
         </li>
         <li>
           <div class="node">
-            <h3>Post College</h3>
-            <p>Took the title of Silvan Business Group straight out of college and have been passionate about its growth ever since.</p>
+            <h3 style="margin-top: 20px;">School & Entrepreneurship</h3>
+            <p>Balanced academics with contributing to Silvan Business Group, focusing on social media and business development.</p>
           </div>
         </li>
         <li>
           <div class="node">
-            <h3>School Contribution</h3>
-            <p>Even while in the School Session, I began to contribute to the growth and development of Silvan Business Group.</p>
+            <h3 style="margin-top: 20px;">Stepping Into Leadership</h3>
+            <p>Took on a leadership role at Silvan Business Group straight out of college, passionately driving its growth and success.</p>
           </div>
         </li>
         <li>
           <div class="node">
-            <h3>Initial Focus</h3>
-            <p>Initially focused on social media and business development for the group.</p>
+            <h3 style="margin-top: 20px;">Expanding Horizons</h3>
+            <p>Became Director of Global Operations at Silvan Business Group, focusing on scaling the business internationally.</p>
           </div>
         </li>
         <li>
           <div class="node">
-            <h3>Current Role</h3>
-            <p>Now, I'm thrilled to be the Director of Global Operations at Silvan Business Group & Managing Director of Silvano Interiors.</p>
+            <h3 style="margin-top: 20px;">Creative Innovation</h3>
+            <p>Founded and now lead Silvano Interiors, blending business expertise with creative vision to deliver transformative designs.</p>
           </div>
         </li>
         <li>
           <div class="node">
-            <h3>Future Vision</h3>
-            <p>Bringing my experience and dedication to continue driving our family business forward.</p>
+            <h3 style="margin-top: 20px;" >Looking Ahead</h3>
+            <p>Dedicated to driving the family business forward while mentoring the next generation of leaders.</p>
           </div>
         </li>
       </ul>
     </div>
+    
 
     <div class="container-unique">
       <div class="text-section-unique">
@@ -573,100 +593,6 @@
       </div>
 
     </section><!-- /Team Section -->
-
-        <!-- Details Section -->
-        <section id="vision&mission" class="details section">
-
-          <div class="container">
-            <div class="row gy-4 align-items-center features-item">
-              <div class="col-md-5 d-flex align-items-center"  >
-                <img src="assets/img/silvan/10.jpeg" class="img-fluid" alt="Our Vision">
-              </div>
-              <div class="col-md-7"  >
-                <h3>Our Vision</h3>
-                <p class="fst-italic">
-                  We aspire to lead globally, offering accessible luxury across borders.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check"></i><span> Dedicated to innovation and quality excellence.</span></li>
-                  <li><i class="bi bi-check"></i><span> Committed to creating meaningful experiences for our customers.</span></li>
-                  <li><i class="bi bi-check"></i><span> Striving for sustainability and ethical practices worldwide.</span></li>
-                </ul>
-              </div>
-            </div><!-- Features Item -->
-          </div>
-          <br><br>
-          <div class="container">
-            <div class="row gy-4 align-items-center features-item">
-              <div class="col-md-5 d-flex align-items-center"  >
-                <img src="assets/img/silvan/12.jpeg" class="img-fluid" alt="Our Mission">
-              </div>
-              <div class="col-md-7"  >
-                <h3>Our Mission</h3>
-                <p class="fst-italic">
-                  Achieving customer delight through business innovation and cost-effectiveness while pursuing the latest industry trends for creating stakeholder values by rapidly growing our turnover and profitability.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check"></i><span> Focused on delivering exceptional customer experiences.</span></li>
-                  <li><i class="bi bi-check"></i><span> Embracing innovation and cost-efficient practices.</span></li>
-                  <li><i class="bi bi-check"></i><span> Driving growth to enhance stakeholder value.</span></li>
-                </ul>
-              </div>
-            </div><!-- Features Item -->
-          </div>
-          <br><br>
-          <div class="container">
-            <div class="row gy-4 align-items-center features-item">
-              <div class="col-md-5 d-flex align-items-center"  >
-                <img src="assets/img/silvan/11.jpeg" class="img-fluid" alt="Our Purpose">
-              </div>
-              <div class="col-md-7"  >
-                <h3>Our Purpose</h3>
-                <p class="fst-italic">
-                  Silvan Group: To provide floor tiles to 5,000 families who are in poverty and unable to afford them by 2030.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check"></i><span> Committed to supporting underprivileged communities.</span></li>
-                  <li><i class="bi bi-check"></i><span> Striving for impactful social responsibility initiatives.</span></li>
-                  <li><i class="bi bi-check"></i><span> Dedicated to achieving this goal by 2030.</span></li>
-                </ul>
-              </div>
-            </div><!-- Features Item -->
-          </div>
-          
-          <br><br>
-          <div class="container">
-            <div class="row gy-4 align-items-center features-item">
-              <div class="col-md-5 d-flex align-items-center"  >
-                <img src="assets/img/silvan/15.jpeg" class="img-fluid" alt="Our Values">
-              </div>
-              <div class="col-md-7"  >
-                <h3>Our Values</h3>
-                <p class="fst-italic">
-                  Our core values shape every aspect of our organization and guide us in our journey to excellence.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check"></i><span> Responsibility: Upholding accountability in all our actions.</span></li>
-                  <li><i class="bi bi-check"></i><span> Customer Service: Ensuring exceptional care and satisfaction.</span></li>
-                  <li><i class="bi bi-check"></i><span> Quality: Delivering excellence in every product and service.</span></li>
-                  <li><i class="bi bi-check"></i><span> Hospitality: Fostering warmth and a welcoming spirit.</span></li>
-                  <li><i class="bi bi-check"></i><span> Inclusivity: Embracing diversity and promoting equality.</span></li>
-                </ul>
-              </div>
-            </div><!-- Features Item -->
-          </div>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-                </div>
-          
-              </section><!-- /Details Section -->
     <!-- Features Section -->
     <section id="brands" class="features section">
 
@@ -752,6 +678,164 @@
       </div>
 
     </section><!-- /Features Section -->
+        <!-- Details Section -->
+        <section id="vision&mission" class="details-section">
+          <style>
+            /* General Styles */
+            .details-section {
+              background-color: #f4f4f9;
+              font-family: 'Segoe UI', sans-serif;
+              padding: 60px 20px;
+              animation: fadeIn 1.5s ease-in-out;
+            }
+        
+            .details-container {
+              max-width: 1200px;
+              margin: auto;
+            }
+        
+            /* Section Block */
+            .block {
+              margin-bottom: 40px;
+              padding: 35px;
+              background: #ffffff;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              border-left: 5px solid #007bff;
+              transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+              animation: slideIn 1s ease-out;
+            }
+        
+            /* Block Hover Effect */
+            .block:hover {
+              transform: translateY(-10px);
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            }
+        
+            /* Section Heading */
+            .block h3 {
+              font-size: 26px;
+              color: #333;
+              margin-bottom: 15px;
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
+        
+            /* Paragraph */
+            .block p {
+              font-size: 16px;
+              color: #555;
+              margin-bottom: 20px;
+              line-height: 1.6;
+            }
+        
+            /* List */
+            .block ul {
+              list-style-type: none;
+              padding-left: 0;
+            }
+        
+            .block ul li {
+              font-size: 16px;
+              color: #333;
+              margin-bottom: 12px;
+              display: flex;
+              align-items: center;
+              transition: color 0.3s ease;
+            }
+        
+            .block ul li i {
+              color: #007bff;
+              font-size: 18px;
+              margin-right: 10px;
+            }
+        
+            .block ul li:hover {
+              color: #007bff;
+            }
+        
+            /* Animation for fading in */
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+        
+            /* Slide-in effect for block */
+            @keyframes slideIn {
+              0% {
+                transform: translateY(20px);
+                opacity: 0;
+              }
+              100% {
+                transform: translateY(0);
+                opacity: 1;
+              }
+            }
+          </style>
+        
+          <div class="details-container">
+            <!-- Vision -->
+            <div class="block">
+              <h3 >Our Vision</h3>
+              <p class="fst-italic">
+                We aspire to lead globally, offering accessible luxury across borders.
+              </p>
+              <ul>
+                <li><i class="bi bi-check"></i><span> Dedicated to innovation and quality excellence.</span></li>
+                <li><i class="bi bi-check"></i><span> Committed to creating meaningful experiences for our customers.</span></li>
+                <li><i class="bi bi-check"></i><span> Striving for sustainability and ethical practices worldwide.</span></li>
+              </ul>
+            </div>
+        
+            <!-- Mission -->
+            <div class="block">
+              <h3>Our Mission</h3>
+              <p class="fst-italic">
+                Achieving customer delight through business innovation and cost-effectiveness while pursuing the latest industry trends for creating stakeholder values by rapidly growing our turnover and profitability.
+              </p>
+              <ul>
+                <li><i class="bi bi-check"></i><span> Focused on delivering exceptional customer experiences.</span></li>
+                <li><i class="bi bi-check"></i><span> Embracing innovation and cost-efficient practices.</span></li>
+                <li><i class="bi bi-check"></i><span> Driving growth to enhance stakeholder value.</span></li>
+              </ul>
+            </div>
+        
+            <!-- Purpose -->
+            <div class="block">
+              <h3>Our Purpose</h3>
+              <p class="fst-italic">
+                Silvan Group: To provide floor tiles to 5,000 families who are in poverty and unable to afford them by 2030.
+              </p>
+              <ul>
+                <li><i class="bi bi-check"></i><span> Committed to supporting underprivileged communities.</span></li>
+                <li><i class="bi bi-check"></i><span> Striving for impactful social responsibility initiatives.</span></li>
+                <li><i class="bi bi-check"></i><span> Dedicated to achieving this goal by 2030.</span></li>
+              </ul>
+            </div>
+        
+            <!-- Values -->
+            <div class="block">
+              <h3>Our Values</h3>
+              <p class="fst-italic">
+                Our core values shape every aspect of our organization and guide us in our journey to excellence.
+              </p>
+              <ul>
+                <li><i class="bi bi-check"></i><span> Responsibility: Upholding accountability in all our actions.</span></li>
+                <li><i class="bi bi-check"></i><span> Customer Service: Ensuring exceptional care and satisfaction.</span></li>
+                <li><i class="bi bi-check"></i><span> Quality: Delivering excellence in every product and service.</span></li>
+                <li><i class="bi bi-check"></i><span> Hospitality: Fostering warmth and a welcoming spirit.</span></li>
+                <li><i class="bi bi-check"></i><span> Inclusivity: Embracing diversity and promoting equality.</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+
         <!-- Team Section -->
         <section id="showrooms" class="team section">
 
